@@ -464,3 +464,110 @@ html{
     line-height:1.8;
 
 }
+/* ==========================
+   SHOWCASE
+========================== */
+
+.showcase{
+
+    padding:120px 8%;
+
+    background:#050505;
+
+}
+
+.showcase-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.showcase-card{
+
+    height:450px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    background:linear-gradient(135deg,#222,#111);
+
+}
+
+.showcase-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.showcase-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.2));
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:35px;
+
+}
+
+.showcase-overlay h3{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.showcase-overlay p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.real-estate{
+
+    border:1px solid rgba(200,162,75,.25);
+
+}
+
+.business{
+
+    border:1px solid rgba(200,162,75,.25);
+
+}
+
+.drone{
+
+    border:1px solid rgba(200,162,75,.25);
+
+}
+
+@media(max-width:900px){
+
+.showcase-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
