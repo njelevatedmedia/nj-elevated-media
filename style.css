@@ -140,7 +140,7 @@ a {
     position: relative;
     min-height: 850px;
     background:
-        url("images/hero-home.jpg")
+        url("images/hero-home.png")
         center center / cover
         no-repeat;
     color: #ffffff;
