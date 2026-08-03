@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page display correctly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect | NJ Elevated Media</title>
+
+    <meta
+        name="description"
+        content="Book a real estate media shoot, visit NJ Elevated Media, or view our latest work on Instagram."
+    >
+
+    <style>
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 32px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #252525 0%,
+                    #111111 42%,
+                    #050505 100%
+                );
+
+            color: #ffffff;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+        }
+
+        /* =========================
+           LANDING PAGE CARD
+        ========================= */
+
+        .connect-card {
+            width: 100%;
+            max-width: 480px;
+
+            padding: 42px 28px 30px;
+
+            text-align: center;
+
+            background: rgba(10, 10, 10, 0.94);
+
+            border: 1px solid rgba(205, 164, 83, 0.45);
+            border-radius: 18px;
+
+            box-shadow:
+                0 20px 55px rgba(0, 0, 0, 0.55),
+                0 0 30px rgba(205, 164, 83, 0.08);
+        }
+
+        /* =========================
+           LOGO
+        ========================= */
+
+        .logo {
+            display: block;
+
+            width: 100%;
+            max-width: 315px;
+            height: auto;
+
+            margin: 0 auto 28px;
+        }
+
+        /* =========================
+           TEXT
+        ========================= */
+
+        h1 {
+            margin-bottom: 10px;
+
+            color: #d4af62;
+
+            font-size: 1.65rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            max-width: 360px;
+
+            margin: 0 auto 30px;
+
+            color: #d4d4d4;
+
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================= */
+
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .connect-button {
+            min-height: 64px;
+            padding: 16px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            color: #ffffff;
+            background: #151515;
+
+            border: 1px solid #cda453;
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+
+            transition:
+                transform 0.2s ease,
+                background-color 0.2s ease,
+                color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .connect-button:hover,
+        .connect-button:focus {
+            color: #080808;
+            background: #d4af62;
+
+            transform: translateY(-2px);
+
+            box-shadow: 0 10px 25px rgba(212, 175, 98, 0.22);
+        }
+
+        .connect-button:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 3px;
+        }
+
+        .button-icon {
+            font-size: 1.3rem;
+        }
+
+        /* Makes the booking button stand out */
+        .primary-button {
+            color: #080808;
+            background: linear-gradient(
+                135deg,
+                #e0bd70,
+                #b88936
+            );
+
+            border-color: #e0bd70;
+        }
+
+        .primary-button:hover,
+        .primary-button:focus {
+            color: #080808;
+            background: #f0cc7b;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .services {
+            margin-top: 30px;
+
+            color: #aaa;
+
+            font-size: 0.78rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .copyright {
+            margin-top: 14px;
+
+            color: #696969;
+
+            font-size: 0.72rem;
+        }
+
+        /* =========================
+           SMALL PHONES
+        ========================= */
+
+        @media (max-width: 480px) {
+            body {
+                padding: 18px 14px;
+            }
+
+            .connect-card {
+                padding: 34px 20px 25px;
+                border-radius: 14px;
+            }
+
+            .logo {
+                max-width: 270px;
+            }
+
+            h1 {
+                font-size: 1.35rem;
+            }
+
+            .connect-button {
+                min-height: 60px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="connect-card">
+
+        <!--
+            Your logo is stored in the main images folder.
+            Since this file is inside the connect folder,
+            ../ moves back to the main website folder.
+        -->
+        <img
+            class="logo"
+            src="../images/logo.png"
+            alt="NJ Elevated Media"
+        >
+
+        <h1>Let’s Connect</h1>
+
+        <p class="intro">
+            Book your next shoot, explore our services,
+            or view our latest work.
+        </p>
+
+        <div class="button-list">
+
+            <!-- BOOK A SHOOT -->
+            <a
+                class="connect-button primary-button"
+                href="../#contact"
+                aria-label="Book a shoot with NJ Elevated Media"
+            >
+                <span class="button-icon">📅</span>
+                <span>Book a Shoot</span>
+            </a>
+
+            <!-- MAIN WEBSITE -->
+            <a
+                class="connect-button"
+                href="../"
+                aria-label="Visit the NJ Elevated Media website"
+            >
+                <span class="button-icon">🌐</span>
+                <span>Visit Our Website</span>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a
+                class="connect-button"
+                href="https://www.instagram.com/nj_elevated_media/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View NJ Elevated Media on Instagram"
+            >
+                <span class="button-icon">📸</span>
+                <span>View Our Instagram</span>
+            </a>
+
+        </div>
+
+        <p class="services">
+            Photography • Drone • Video • Floor Plans
+        </p>
+
+        <p class="copyright">
+            © <span id="current-year"></span> NJ Elevated Media
+        </p>
+
+    </main>
+
+    <script>
+        // Automatically displays the current year
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
